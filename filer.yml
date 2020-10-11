@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+          - name: this will create the file in the server tmp partition
+            file:
+                   path: /tmp/testfiler
+                   state: touch
